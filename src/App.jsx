@@ -100,10 +100,10 @@ const App = () => {
   // Forms[]
   return (
     <div className="container">
-      <h1>Manage Users, Study Sessions, and Notes</h1>
+      <h1  style={{color:'brown'}}>Manage Users, Study Sessions, and Notes</h1>
 
       <div>
-        <h2>Add User</h2>
+        <h2 style={{color:'brown'}}>Add User</h2>
         <input
           type="text"
           placeholder="Name"
@@ -126,7 +126,7 @@ const App = () => {
       </div>
 
       <div>
-        <h2>Users</h2>
+        <h2  style={{color:'brown'}}>Users</h2>
         {users.map((user) => (
           <div key={user.id} className="card">
             <p>{user.name}</p>
@@ -137,7 +137,7 @@ const App = () => {
       </div>
 
       <div>
-        <h2>Add Study Session</h2>
+        <h2  style={{color:'brown'}}>Add Study Session</h2>
         <input
           type="text"
           placeholder="Session Title"
@@ -165,7 +165,7 @@ const App = () => {
       </div>
 
       <div>
-        <h2>Study Sessions</h2>
+        <h2  style={{color:'brown'}}>Study Sessions</h2>
         {studySessions.map((session) => (
           <div key={session.id} className="card">
             <p>{session.title}</p>
@@ -177,7 +177,7 @@ const App = () => {
       </div>
 
       <div>
-        <h2>Add Session Note</h2>
+        <h2  style={{color:'brown'}}>Add Session Note</h2>
         <textarea
           placeholder="Note Content"
           value={newNote.note_context}
@@ -193,7 +193,7 @@ const App = () => {
       </div>
 
       <div>
-        <h2>Session Notes</h2>
+        <h2  style={{color:'brown'}}>Session Notes</h2>
         {sessionNotes.map((note) => (
           <div key={note.id} className="card">
             <p>{note.note_context}</p>
